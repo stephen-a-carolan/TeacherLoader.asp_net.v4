@@ -1,0 +1,27 @@
+﻿@page
+@model TeacherLoader.asp_net.v1.Pages.uploadModel
+@{
+}
+<div class="col-md-10">
+    <h2>
+        Upload Here &#8594;
+    </h2>
+    <p>
+        Please upload .csv files only!
+    </p>
+</div>
+
+
+
+<div class="f-upload" id="fileup">
+    <div class="col-md-12">
+
+        <form action="upload.php" method="POST">
+            <input type="file" multiple>
+            <p>Drag your files here or click in this area  &#128221;</p>
+            <button id="upbutton" type="submit">Upload</button>
+        </form>
+
+    </div>
+</div>
+
