@@ -2,26 +2,49 @@
 @model TeacherLoader.asp_net.v1.Pages.uploadModel
 @{
 }
-<div class="col-md-10">
-    <h2>
-        Upload Here &#8594;
-    </h2>
-    <p>
-        Please upload .csv files only!
-    </p>
-</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TeacherLoader.asp_net.v1</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
 
 
 
-<div class="f-upload" id="fileup">
-    <div class="col-md-12">
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
 
-        <form action="upload.php" method="POST">
-            <input type="file" multiple>
-            <p>Drag your files here or click in this area  &#128221;</p>
-            <button id="upbutton" type="submit">Upload</button>
-        </form>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop or Browse: File Upload | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="drag-area">
+        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+        <header>Drag & Drop to Upload File</header>
+        <span>OR</span>
+        <hr />
+        <input id="File1" type="file" />
     </div>
-</div>
 
+    <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
