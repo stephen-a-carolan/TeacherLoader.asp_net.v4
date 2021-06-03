@@ -8,43 +8,52 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - TeacherLoader.asp_net.v1</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
 
 
 
-<!-- Created By CodingNepal - www.codingnepalweb.com -->
 
+    <!-- Created By CodingNepal - www.codingnepalweb.com -->
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drag & Drop or Browse: File Upload | CodingNepal</title>
-    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    <div class="drag-area">
-        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
-        <header>Drag & Drop to Upload File</header>
-        <span>OR</span>
-        <hr />
-        <input id="File1" type="file" />
+    <div class="d-flex justify-content-center">
+
+        <h3>Upload Pages Here</h3>
     </div>
 
-    <script src="script.js"></script>
+    <div class="d-flex justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5>File Upload</h5>
+                </div>
+                <div class="card-block">
+                    <form action="#" class="dropzone dz-clickable">
+                        <div class="dz-default dz-message"><span>Drop files here to upload</span></div>
+                    </form>
+                    <hr />
+                    <input id="File1" type="file" />
+
+                    <div class="text-center m-t-20">
+                        <button class="btn btn-primary">Upload Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-
-
-
-
-
-
-
-
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
